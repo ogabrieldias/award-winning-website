@@ -1,6 +1,8 @@
 import { useState, useRef } from "react";
 import { TiLocationArrow } from "react-icons/ti";
 
+import AnimatedTitle from "./AnimatedTitle";
+
 export const BentoTilt = ({ children, className = "" }) => {
   const [transformStyle, setTransformStyle] = useState("");
   const itemRef = useRef(null);
@@ -38,7 +40,7 @@ export const BentoTilt = ({ children, className = "" }) => {
   );
 };
 
-export const BentoCard = ({ src, title, description, isComingSoon }) => {
+export const BentoCard = ({ src, title, description, isComingSoon, link }) => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [hoverOpacity, setHoverOpacity] = useState(0);
   const hoverButtonRef = useRef(null);
@@ -67,14 +69,17 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
       />
       <div className="relative z-10 flex size-full flex-col justify-between p-5 text-blue-50">
         <div>
-          <h1 className="bento-title special-font">{title}</h1>
+          <h1 className="bento-title special-font text-black">{title}</h1>
           {description && (
-            <p className="mt-3 max-w-64 text-xs md:text-base">{description}</p>
+            <p className="mt-3 max-w-64 text-xs md:text-base text-black">{description}</p>
           )}
         </div>
 
-        {isComingSoon && (
-          <div
+        {isComingSoon && link && (
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
             ref={hoverButtonRef}
             onMouseMove={handleMouseMove}
             onMouseEnter={handleMouseEnter}
@@ -90,8 +95,8 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
               }}
             />
             <TiLocationArrow className="relative z-20" />
-            <p className="relative z-20">coming soon</p>
-          </div>
+            <p className="relative z-20">Visitar Site</p>
+          </a>
         )}
       </div>
     </div>
@@ -102,87 +107,74 @@ const Features = () => (
   <section className="bg-black pb-52">
     <div className="container mx-auto px-3 md:px-10">
       <div className="px-5 py-32">
-        <p className="font-circular-web text-lg text-blue-50">
-          Into the Metagame Layer
-        </p>
-        <p className="max-w-md font-circular-web text-lg text-blue-50 opacity-50">
-          Immerse yourself in a rich and ever-expanding universe where a vibrant
-          array of products converge into an interconnected overlay experience
-          on your world.
+        <AnimatedTitle
+          title="Pro<b>je</b>tos"
+          containerClass="mt-5 text-center"
+        />
+        <p className="max-w-md font-circular-web text-lg text-blue-50 opacity-50 mt-9">
+          Cada projeto aqui é mais do que código: é prova da minha dedicacão, criatividade e visão. <br />
+          Explore e descubra como transformo ideias em experiências digitais.
         </p>
       </div>
 
       <BentoTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
         <BentoCard
-          src="videos/feature-1.mp4"
-          title={
-            <>
-              radia<b>n</b>t
-            </>
-          }
-          description="A cross-platform metagame app, turning your activities across Web2 and Web3 games into a rewarding adventure."
+          src="videos/projects/Weather.mp4"
+          title={<>Cli<b>m</b>a</>}
+          description="App que mostra clima em tempo real de qualquer cidade com temperatura, condicoes e imagem ilustrativa."
           isComingSoon
+          link="https://clima-ht49.onrender.com"
         />
       </BentoTilt>
 
       <div className="grid h-[135vh] w-full grid-cols-2 grid-rows-3 gap-7">
         <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2">
           <BentoCard
-            src="videos/feature-2.mp4"
-            title={
-              <>
-                zig<b>m</b>a
-              </>
-            }
-            description="An anime and gaming-inspired NFT collection - the IP primed for expansion."
+            src="videos/projects/Costs.mp4"
+            title={<>Cos<b>t</b>s</>}
+            description="App em React para cadastrar projetos, adicionar servicos e controlar custos."
             isComingSoon
+            link="https://costs01.vercel.app/"
           />
         </BentoTilt>
 
         <BentoTilt className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0">
           <BentoCard
-            src="videos/feature-3.mp4"
-            title={
-              <>
-                n<b>e</b>xus
-              </>
-            }
-            description="A gamified social hub, adding a new dimension of play to social interaction for Web3 communities."
+            src="videos/projects/Cardapio.mp4"
+            title={<>Me<b>n</b>u</>}
+            description="Cardapio Digital é um app para menus online."
             isComingSoon
+            link="https://ogabrieldias.github.io/cardapio/html/index.html"
           />
         </BentoTilt>
 
-        <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0">
+        <BentoTilt className="bento-tilt_1 me-14 md:col-span-1  md:me-0">
           <BentoCard
-            src="videos/feature-4.mp4"
-            title={
-              <>
-                az<b>u</b>l
-              </>
-            }
-            description="A cross-world AI Agent - elevating your gameplay to be more fun and productive."
+            src="videos/projects/Android.mp4"
+            title={<>An<b>d</b>roid</>}
+            description="Projeto que simula um site Android com efeito moderno."
             isComingSoon
+            link="https://ogabrieldias.github.io/android/"
+          />
+        </BentoTilt>
+      
+        <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2">
+          <BentoCard
+            src="videos/projects/Costs.mp4"
+            title={<>Lo<b>g</b>in</>}
+            description="Projeto de tela de login moderna com animações CSS."
+            isComingSoon
+            link="https://ogabrieldias.github.io/projeto-login/"
           />
         </BentoTilt>
 
         <BentoTilt className="bento-tilt_2">
           <div className="flex size-full flex-col justify-between bg-violet-300 p-5">
             <h1 className="bento-title special-font max-w-64 text-black">
-              M<b>o</b>re co<b>m</b>ing s<b>o</b>on.
+              Pro<b>j</b>eto em anda<b>m</b>ento ag<b>u</b>arde!
             </h1>
-
             <TiLocationArrow className="m-5 scale-[5] self-end" />
           </div>
-        </BentoTilt>
-
-        <BentoTilt className="bento-tilt_2">
-          <video
-            src="videos/feature-5.mp4"
-            loop
-            muted
-            autoPlay
-            className="size-full object-cover object-center"
-          />
         </BentoTilt>
       </div>
     </div>
