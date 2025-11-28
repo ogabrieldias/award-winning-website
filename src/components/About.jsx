@@ -34,17 +34,20 @@ const About = () => {
         </p>
 
         <AnimatedTitle
-          title="Cad<b>a</b> <br /> detalh<b>e </b>importa"
+          title="Cad<b>a</b> <br /> detalh<b>e </b>i<b>m</b>por<b>t</b>a"
           containerClass="mt-5 !text-black text-center"
         />
 
-        <div className="about-subtext ">
-          
-          <p className="text-gray-500 ">
+
+         <p className="text-gray-500 w-[70%] text-center ">
             Tenho 20 anos, mais de 33 certificações em tecnologia e estudo Engenharia de Software.
             Meu objetivo é atuar como desenvolvedor, transformando conhecimento em resultados reais.  
             Se busca energia, disciplina e vontade de inovar, aqui estou.
           </p>
+
+        <div className="about-subtext mt-8">
+          
+         
         </div>
       </div>
 
