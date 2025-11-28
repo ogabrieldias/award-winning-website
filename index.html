@@ -4,17 +4,23 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-    <!-- CDN para icones -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v6.4.0/css/all.css"
-    />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
+    <title>Gabriel Dias | Portfolio</title>
+
+    <!-- Preload CSS principal -->
+    <link rel="preload" href="/assets/index.css" as="style" onload="this.rel='stylesheet'">
 
     
+
+    <!-- Font display swap (se usar @font-face no CSS) -->
+    <style>
+      @font-face {
+        font-family: 'General Sans';
+        src: url('/fonts/general-sans.woff2') format('woff2');
+        font-display: swap;
+      }
+    </style>
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>

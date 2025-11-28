@@ -1,8 +1,8 @@
 import About from "./components/About";
-import Hero from "./components/Hero";
+import Home from "./components/Home";
 import NavBar from "./components/Navbar";
-import Features from "./components/Features";
-import Story from "./components/Story";
+import Project from "./components/Project";
+import Curriculo from "./components/Curriculo";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -10,10 +10,10 @@ function App() {
   return (
     <main className="relative min-h-screen w-screen overflow-x-hidden">
       <NavBar />
-      <Hero />
+      <Home />
       <About />
-      <Features />
-      <Story />
+      <Project />
+      <Curriculo />
       <Contact />
       <Footer />
     </main>

@@ -38,13 +38,12 @@ const About = () => {
           containerClass="mt-5 !text-black text-center"
         />
 
-        <div className="about-subtext">
+        <div className="about-subtext ">
           
-          <p className="text-gray-500">
+          <p className="text-gray-500 ">
             Tenho 20 anos, mais de 33 certificações em tecnologia e estudo Engenharia de Software.
             Meu objetivo é atuar como desenvolvedor, transformando conhecimento em resultados reais.  
             Se busca energia, disciplina e vontade de inovar, aqui estou.
-
           </p>
         </div>
       </div>
@@ -54,7 +53,7 @@ const About = () => {
           <img
             src="img/about.jpg"
             alt="Background"
-            className="absolute left-0 top-0 size-full object-cover"
+            className="absolute left-0 top-0 size-full object-cover "
           />
         </div>
       </div>

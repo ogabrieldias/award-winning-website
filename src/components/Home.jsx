@@ -9,7 +9,7 @@ import VideoPreview from "./VideoPreview";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Hero = () => {
+const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(1);
   const [hasClicked, setHasClicked] = useState(false);
 
@@ -171,4 +171,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Home;
