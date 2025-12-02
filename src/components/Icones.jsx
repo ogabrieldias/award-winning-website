@@ -7,7 +7,7 @@ const Contato = () => {
       <div className="contato-item">
         <a href="mailto:gabrieldiass707@gmail.com" aria-label="E-mail">
           <div className="icone" id="email">
-            <img src="/icons/email.svg" alt="Email" width="32" height="32" />
+            <img src="/icons/email.svg" loading="lazy" alt="Email" width="32" height="32" />
           </div>
           <h3>E-mail</h3>
         </a>
@@ -21,7 +21,7 @@ const Contato = () => {
           rel="noopener noreferrer"
         >
           <div className="icone" id="whatsapp">
-            <img src="../../public/icons/whatsapp.svg" alt="Whatsapp" width="32" height="32" />
+            <img src="../icons/whatsapp.svg" loading="lazy" alt="Whatsapp" width="32" height="32" />
           </div>
           <h3>Telefone</h3>
         </a>
@@ -35,7 +35,7 @@ const Contato = () => {
           rel="noopener noreferrer"
         >
           <div className="icone" id="linkedin">
-            <img src="/icons/linkedin.svg" alt="Linkedin" width="32" height="32" />
+            <img src="/icons/linkedin.svg" loading="lazy" alt="Linkedin" width="32" height="32" />
           </div>
           <h3>Linkedin</h3>
         </a>
@@ -49,7 +49,7 @@ const Contato = () => {
           rel="noopener noreferrer"
         >
           <div className="icone" id="github">
-            <img src="/icons/github.svg" alt="Github" width="32" height="32" />
+            <img src="/icons/github.svg" loading="lazy" alt="Github" width="32" height="32" />
           </div>
           <h3>Github</h3>
         </a>
@@ -63,7 +63,7 @@ const Contato = () => {
           rel="noopener noreferrer"
         >
           <div className="icone" id="instagram">
-            <img src="/icons/instagram.svg" alt="Instagram" width="32" height="32" />
+            <img src="/icons/instagram.svg" loading="lazy" alt="Instagram" width="32" height="32" />
           </div>
           <h3>Instagram</h3>
         </a>

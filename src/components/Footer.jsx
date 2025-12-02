@@ -1,9 +1,9 @@
 import { FaDiscord, FaTwitter, FaYoutube, FaMedium } from "react-icons/fa";
 
 const socialLinks = [
-  { href: "www.linkedin.com/in/ogabrieldias", icon: <img src="/icons/linkedin.svg" alt="Linkedin" width="32" height="32" /> },
-  { href: "https://github.com/ogabrieldias", icon: <img src="/icons/github.svg" alt="Github" width="32" height="32" /> },
-  { href: "https://www.instagram.com/_ogabrieldias/", icon: <img src="/icons/instagram.svg" alt="Instagram" width="32" height="32" /> }
+  { href: "www.linkedin.com/in/ogabrieldias", icon: <img src="/icons/linkedin.svg" loading="lazy" alt="Linkedin" width="32" height="32" /> },
+  { href: "https://github.com/ogabrieldias", icon: <img src="/icons/github.svg" loading="lazy" alt="Github" width="32" height="32" /> },
+  { href: "https://www.instagram.com/_ogabrieldias/", icon: <img src="/icons/instagram.svg" loading="lazy" alt="Instagram" width="32" height="32" /> }
 ];
 
 const Footer = () => {

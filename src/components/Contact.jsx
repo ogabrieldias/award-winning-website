@@ -4,7 +4,7 @@ import Icones from "./Icones";
 
 const ImageClipBox = ({ src, clipClass }) => (
   <div className={clipClass}>
-    <img src={src} alt="" />
+    <img src={src} alt="" loading="lazy"/>
   </div>
 );
 
@@ -32,7 +32,6 @@ const Contact = () => {
             title="En<b>t</b>re em <br /> Con<b>t<b/>ato <br /> C<b>o</b>migo."
             className="special-font !md:text-[6.2rem] w-full font-zentry !text-5xl !font-black !leading-[.9]"
           />
-          
           
           <Icones />
         </div>
