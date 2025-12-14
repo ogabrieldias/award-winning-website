@@ -114,7 +114,7 @@ const FloatingImage = () => {
               id="realm-btn"
               title="Clique e Confira"
               containerClass="mt-5"
-              href="Currículo/Currículo-Gabriel.pdf"
+              href="/curriculo/Currículo-Gabriel.pdf"
               download="Currículo-Gabriel"
             />
 

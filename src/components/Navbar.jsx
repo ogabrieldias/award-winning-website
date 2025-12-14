@@ -6,7 +6,7 @@ import { TiLocationArrow } from "react-icons/ti";
 
 import Button from "./Button";
 
-const navItems = ["Home", "About", "Project", "Curriculo", "Contact"];
+const navItems = ["Home", "About", "Project", "Curriculo", "Habilidades","Contact"];
 
 const NavBar = () => {
   // State for toggling audio and visual indicator
@@ -78,7 +78,7 @@ const NavBar = () => {
               title="Curriculo"
               rightIcon={<TiLocationArrow />}
               containerClass="bg-blue-50 md:flex hidden items-center justify-center gap-1"
-              href="Currículo/Currículo-Gabriel.pdf"
+              href="/curriculo/Currículo-Gabriel.pdf"
               download="Currículo-Gabriel"
             />
           </div>

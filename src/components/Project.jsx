@@ -84,7 +84,7 @@ export const BentoCard = ({ src, title, description, isComingSoon, link }) => {
             onMouseMove={handleMouseMove}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-            className="border-hsla relative flex w-fit cursor-pointer items-center gap-1 overflow-hidden rounded-full bg-black px-5 py-2 text-xs uppercase text-white/20"
+            className="border-hsla relative flex w-fit cursor-pointer items-center gap-1 overflow-hidden rounded-full bg-black px-5 py-2 text-xs uppercase text-white"
           >
             {/* Radial gradient hover effect */}
             <div
@@ -138,7 +138,7 @@ const Project = () => (
           />
         </BentoTilt>
 
-        <BentoTilt className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0">
+        <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:ms-0">
           <BentoCard
             src="videos/projects/Cardapio.mp4"
             title={<>Me<b>n</b>u</>}
@@ -148,7 +148,7 @@ const Project = () => (
           />
         </BentoTilt>
 
-        <BentoTilt className="bento-tilt_1 me-14 md:col-span-1  md:me-0">
+        <BentoTilt className="bento-tilt_1 md:col-span-1 md:me-0">
           <BentoCard
             src="videos/projects/Android.mp4"
             title={<>An<b>d</b>roid</>}
@@ -168,8 +168,8 @@ const Project = () => (
           />
         </BentoTilt>
 
-        <BentoTilt className="bento-tilt_2">
-          <div className="flex size-full flex-col justify-between bg-violet-300 p-5">
+        <BentoTilt className="bento-tilt_2 ">
+          <div className="flex size-full flex-col justify-between bg-violet-300 p-5 ">
             <h1 className="bento-title special-font max-w-64 text-black">
               Pro<b>j</b>eto em anda<b>m</b>ento ag<b>u</b>arde!
             </h1>
