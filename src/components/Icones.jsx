@@ -13,19 +13,7 @@ const Contato = () => {
         </a>
       </div>
 
-      <div className="contato-item">
-        <a
-          href="https://wa.me/5524998558044"
-          aria-label="Whatsapp"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div className="icone" id="whatsapp">
-            <img src="../icons/whatsapp.svg" loading="lazy" alt="Whatsapp" width="32" height="32" />
-          </div>
-          <h3>Telefone</h3>
-        </a>
-      </div>
+      
 
       <div className="contato-item">
         <a
