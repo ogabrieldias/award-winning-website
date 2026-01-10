@@ -160,11 +160,11 @@ const Project = () => (
       
         <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2">
           <BentoCard
-            src="videos/projects/Costs.mp4"
-            title={<>Lo<b>g</b>in</>}
-            description="Projeto de tela de login moderna com animações CSS."
+            src="videos/projects/Agenda.mp4"
+            title={<>Ag<b>e</b>n<b>d</b>a</>}
+            description="Projeto de agenda moderna com tela de login."
             isComingSoon
-            link="https://ogabrieldias.github.io/projeto-login/"
+            link="https://agenda-26.vercel.app"
           />
         </BentoTilt>
 
